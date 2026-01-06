@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "routes": [
+    {
+      "src": "/detect",
+      "dest": "api/page.py"
+    },
+    {
+      "src": "/uploads/(.*)",
+      "dest": "api/page.py"
+    },
+    {
+      "src": "/api/(.*)",
+      "dest": "/api"
+    }
+  ],
+  "env": {
+    "PYTHONPATH": "."
+  }
+} 
